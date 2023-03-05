@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li:hover {
+    text-decoration: underline;
+    color: #07724e;
+    text-shadow: 2px 2px 5px #07724e;
+}
+
+.content {
+    display: block;
+    max-width: 550px;
+    max-height: 550px;
+    margin: 140px 40px;
+}
+
+.content p {
+    text-indent: 2px;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #282828;
+}
+
+span {
+    color: #07724e;
+    font-weight: 900;
+}
+
+.btn {
+    background-color: #225e4a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.starbucks-coffee {
+    display: grid;
+    grid-auto-flow: column;
+    position: absolute;
+    top: 120px;
+    right: 140px;
+    scroll-behavior: auto;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    background-color: #038a5d;
+    border-radius: 50%;
+    max-width: 700px;
+}
+
+.starbucks-coffee::-webkit-scrollbar {
+    display: none;
+}
+
+.starbucks-coffee img {
+    position: relative;
+    max-width: 350px;
+    margin: 80px;
+}
+
+.coffee-photo {
+    scroll-snap-align: start;
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.starbucks-mine-coffee {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 650px;
+}
+
+.starbucks-mine-coffee img {
+    max-width: 60px;
+    height: auto;
+    margin: 30px;
+}
+
+.starbucks-mine-coffee img:hover, .btn:hover {
+    transform: scale(1.3);
+    transition: .6s;
+    cursor: pointer;
+}
+
+.social-medias {
+    position: fixed;
+    top: 30%;
+    right: 40px;
+    margin: 20px auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: end;
+    margin: 30px auto;
+    background: #26785c;
+    padding: 20px;
+    border-radius: 100%;
+}
+
+.social-icons img {
+    width: 20px;
+    height: auto;
+}
+
+@media (max-width: 1400px) {
+    .social-medias {
+        top: 5%;
+        right: 3px;
+    }
+    .content {
+        margin: 80px 40px;
+    }
+    .content::after {
+        display: none;
+    }
+    h1, h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 01rem;
+    }
+    .starbucks-coffee {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        border-radius: 0px;
+        max-height: 150vw;
+        max-width: 100%;
+        top: 0;
+        right: 0;
+    }
+    .starbucks-mine-coffee {
+        bottom: 660px;
+    }
+    .starbucks-mine-coffee {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 10px;
+    }
+}
