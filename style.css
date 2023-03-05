@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(0deg, #432371ff, #714674ff, #9f6976ff, #cc8b79ff, #faae7bff) no-repeat fixed;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
