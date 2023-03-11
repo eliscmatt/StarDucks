@@ -9,43 +9,32 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <section>
-        <header>
-            <a href="#" class="logo"><img src="assets/logo.png" /></a>
+        <header id="home">
+            <div class="logo_container">
+                    <img src="assets/duck_logo.png" width="100" alt="duck" />
+            </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">What's</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#whats">What's</a></li>
+                <li><a href="#coffees">Coffees</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </header>
+
+    <main id="whats" class="content">
+        <h1>Starducks</h1>
+        <h3>Coffee without crumbs.</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia saepe qui nulla suscipit esse non impedit, dignissimos enim adipisci corporis dolores, et eligendi ipsa similique a voluptatem reprehenderit expedita voluptatum earum aperiam, ex libero inventore. Veritatis quae nam optio odit voluptate eos dolorum illum voluptatibus.</p>
+    </main>
+
+    <section id="coffes" class="content">
+
     </section>
 
-    <div class="flex">
-        <section class="content">
-            <h1 class="title">It's not just Coffee</h1>
-            <h1 class="title">It's <span class="starbucks">Starbucks</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime quaerat reiciendis velit cumque molestiae fugit alias quia beatae sunt illum voluptatem, maiores consequuntur cum dolore natus? Cum fugit quia aut quae, accusantium ex quod?</p>
-            <button class="btn">Learn more</button>
-        </section>
-        <section class="starbucks-coffee">
-            <img class="coffee-photo" src="assets/img2.png" />
-            <img class="coffee-photo" src="assets/img1.png" />
-            <img class="coffee-photo" src="assets/img3.png" />
-        </section>
-    </div>
-
-    <section class="starbucks-mine-coffee">
-        <img src="assets/thumb1.png" />
-        <img src="assets/thumb2.png" />
-        <img src="assets/thumb3.png" />
-    </section>
-
-    <section class="social-medias">
-        <ul>
-            <li class="social-icons"><a href="#"><img src="assets/twitter.png" /></a></li>
-            <li class="social-icons"><a href="#"><img src="assets/instagram.png" /></a></li>
-        </ul>
-    </section>
+    <footer id="contact" class="content">
+        <blockquote cite="StarducksEnterprise">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing.</p>
+        </blockquote>
+    </footer>
 </body>
 </html>

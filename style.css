@@ -1,7 +1,3 @@
-/* body {
-    background: linear-gradient(0deg, #432371ff, #714674ff, #9f6976ff, #cc8b79ff, #faae7bff) no-repeat fixed;
-} */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,12 +12,17 @@
     scroll-behavior: smooth;
 }
 
+html {
+    background-color: #fffcef;
+}
+
 header {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 30px;
+    padding: 40px 20px 0 20px;
 }
 
 header ul {
@@ -33,17 +34,44 @@ header ul li {
     margin: 0 10px;
 }
 
-header ul li:hover {
-    text-decoration: underline;
-    color: #07724e;
-    text-shadow: 2px 2px 5px #07724e;
+li:hover, a:hover {
+    color: #c99613;
+    text-shadow: 2px 2px #ffefb0;
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.logo_container {
+    position: relative;
+    background-color: #fde06c;
+    padding: 60px;
+    border-radius: 100%;
+}
+
+.logo_container:hover {
+    box-shadow: -20px 0px #c99613;
+    transition: .6s;
+    
+
+}
+
+.logo_container img {
+    position: absolute;
+    left: 0px;
+    top: 28px;
+    width: 120px;
 }
 
 .content {
     display: block;
     max-width: 550px;
     max-height: 550px;
-    margin: 140px 40px;
+    margin: 4rem 2rem;
 }
 
 .content p {
@@ -52,138 +80,24 @@ header ul li:hover {
     margin: 20px 0;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main p {
+    margin: 20px 0;
+    text-indent: 1rem;
+}
+
+h1, h3 {
+    color: #fde06c;
+    text-shadow: 2px 2px #c99613;
+}
 h1 {
     font-size: 3rem;
-    color: #282828;
 }
-
-span {
-    color: #07724e;
-    font-weight: 900;
-}
-
-.btn {
-    background-color: #225e4a;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-.starbucks-coffee {
-    display: grid;
-    grid-auto-flow: column;
-    position: absolute;
-    top: 120px;
-    right: 140px;
-    scroll-behavior: auto;
-    overflow-y: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    background-color: #038a5d;
-    border-radius: 50%;
-    max-width: 700px;
-}
-
-.starbucks-coffee::-webkit-scrollbar {
-    display: none;
-}
-
-.starbucks-coffee img {
-    position: relative;
-    max-width: 350px;
-    margin: 80px;
-}
-
-.coffee-photo {
-    scroll-snap-align: start;
-    border-radius: 30px;
-    min-height: 200px;
-    min-width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.starbucks-mine-coffee {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    right: 650px;
-}
-
-.starbucks-mine-coffee img {
-    max-width: 60px;
-    height: auto;
-    margin: 30px;
-}
-
-.starbucks-mine-coffee img:hover, .btn:hover {
-    transform: scale(1.3);
-    transition: .6s;
-    cursor: pointer;
-}
-
-.social-medias {
-    position: fixed;
-    top: 30%;
-    right: 40px;
-    margin: 20px auto;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: end;
-    margin: 30px auto;
-    background: #26785c;
-    padding: 20px;
-    border-radius: 100%;
-}
-
-.social-icons img {
-    width: 20px;
-    height: auto;
-}
-
-@media (max-width: 1400px) {
-    .social-medias {
-        top: 5%;
-        right: 3px;
-    }
-    .content {
-        margin: 80px 40px;
-    }
-    .content::after {
-        display: none;
-    }
-    h1, h2 {
-        font-size: 2rem;
-    }
-    p {
-        font-size: 01rem;
-    }
-    .starbucks-coffee {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        border-radius: 0px;
-        max-height: 150vw;
-        max-width: 100%;
-        top: 0;
-        right: 0;
-    }
-    .starbucks-mine-coffee {
-        bottom: 660px;
-    }
-    .starbucks-mine-coffee {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        left: 10px;
-    }
+h3 {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
 }
